@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
@@ -111,9 +111,9 @@
         </section>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link link" href="#">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link link" href="#">Компания</a></li>
-            <li class="main-nav__item"><a class="main-nav__link link" href="#">Каталог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link link" href="catalog.html">Каталог</a></li>
             <li class="main-nav__item"><a class="main-nav__link link" href="#">Новости</a></li>
             <li class="main-nav__item"><a class="main-nav__link link" href="#">Спецпредложения</a></li>
             <li class="main-nav__item"><a class="main-nav__link link" href="#">Доставка</a></li>
@@ -388,73 +388,75 @@
             <p class="contacts__text">
               Вы можете забрать товар сами, заехав в наш офис:
             </p>
-            <img class="contacts__img" src="img/minimap.jpg" width="300" height="158" alt="Как до нас добраться">
+            <button class="contacts__button">
+              <img class="contacts__img" src="img/minimap.jpg" width="300" height="158" alt="Как до нас добраться">
+            </button>
             <button class="contacts__link button" href="#">Заблудились? Напишите нам!</button>
           </section>
         </section>
       </div>
-      <footer class="footer">
-        <div class="footer__container">
-          <a class="footer__logo link" href="index.html">Техномарт</a>
-          <ul class="footer__list footer__list--first">
-            <li class="footer__item"><a class="footer__link link" href="#">Компания</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Новости</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Каталог</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Доставка</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="footer__container">
-          <p class="footer__text footer__text--address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a class="footer__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </p>
-          <ul class="footer__list footer__list--second">
-            <li class="footer__item"><a class="footer__link link" href="#">Материалы</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Техника</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Инструмент</a></li>
-            <li class="footer__item"><a class="footer__link link" href="#">Спецпредложения</a></li>
-          </ul>
-        </div>
-        <div class="footer__add-background">
-          <div class="footer__container">
-            <p class="footer__text footer__text--rights">
-              © 2010–2017 Компания «Техномарт» Все права защищены
-            </p>
-            <ul class="footer__social-list">
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  Вконтакте
-                  <svg class="footer__svg" width="26" height="15">
-                    <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  Фейсбук
-                  <svg class="footer__svg" width="12" height="22">
-                    <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  Инстаграм
-                  <svg class="footer__svg" width="21" height="21">
-                    <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-inst"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <p class="footer__text footer__text--email">
-              Обратная связь: <a class="footer__link footer__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="footer__text footer__text--url">
-              Разработано &mdash; <a class="footer__link footer__link--url" href="http://htmlacademy.ru">htmlacademy.ru</a>
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo link" href="index.html">Техномарт</a>
+        <ul class="footer__list footer__list--first">
+          <li class="footer__item"><a class="footer__link link" href="#">Компания</a></li>
+          <li class="footer__item"><a class="footer__link link" href="#">Новости</a></li>
+          <li class="footer__item"><a class="footer__link link" href="catalog.html">Каталог</a></li>
+          <li class="footer__item"><a class="footer__link link" href="#">Доставка</a></li>
+          <li class="footer__item"><a class="footer__link link" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <p class="footer__text footer__text--address">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a class="footer__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </p>
+        <ul class="footer__list footer__list--second">
+          <li class="footer__item"><a class="footer__link link" href="#">Материалы</a></li>
+          <li class="footer__item"><a class="footer__link link" href="#">Техника</a></li>
+          <li class="footer__item"><a class="footer__link link" href="#">Инструмент</a></li>
+          <li class="footer__item"><a class="footer__link link" href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <div class="footer__add-background">
+        <div class="footer__container">
+          <p class="footer__text footer__text--rights">
+            © 2010–2017 Компания «Техномарт» Все права защищены
+          </p>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                Вконтакте
+                <svg class="footer__svg" width="26" height="15">
+                  <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                Фейсбук
+                <svg class="footer__svg" width="12" height="22">
+                  <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#">
+                Инстаграм
+                <svg class="footer__svg" width="21" height="21">
+                  <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-inst"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__text footer__text--email">
+            Обратная связь: <a class="footer__link footer__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer__text footer__text--url">
+            Разработано &mdash; <a class="footer__link footer__link--url" href="http://htmlacademy.ru">htmlacademy.ru</a>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

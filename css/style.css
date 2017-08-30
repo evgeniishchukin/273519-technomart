@@ -4,8 +4,8 @@
   font-style: normal;
 
   src: local("Cuprum"),
-  url("fonts/cuprum.woff") format("woff"),
-  url("fonts/cuprum.woff2") format("woff2");
+  url("../fonts/cuprum.woff") format("woff"),
+  url("../fonts/cuprum.woff2") format("woff2");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-style: normal;
 
   src: local("Cuprum Bold"),
-  url("fonts/cuprumbold.woff") format("woff"),
-  url("fonts/cuprumbold.woff2") format("woff2");
+  url("../fonts/cuprumbold.woff") format("woff"),
+  url("../fonts/cuprumbold.woff2") format("woff2");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
   font-style: italic;
 
   src: local("Cuprum Bold Italic"),
-  url("fonts/cuprumbolditalic.woff") format("woff"),
-  url("fonts/cuprumbolditalic.woff2") format("woff2");
+  url("../fonts/cuprumbolditalic.woff") format("woff"),
+  url("../fonts/cuprumbolditalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -34,8 +34,8 @@
   font-style: italic;
 
   src: local("Cuprum Italic"),
-  url("fonts/cuprumitalic.woff") format("woff"),
-  url("fonts/cuprumitalic.woff2") format("woff2");
+  url("../fonts/cuprumitalic.woff") format("woff"),
+  url("../fonts/cuprumitalic.woff2") format("woff2");
 }
 
 @font-face {
@@ -44,8 +44,8 @@
   font-style: normal;
 
   src: local("PT Sans"),
-  url("fonts/ptsans.woff") format("woff"),
-  url("fonts/ptsans.woff2") format("woff2");
+  url("../fonts/ptsans.woff") format("woff"),
+  url("../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
@@ -54,8 +54,8 @@
   font-style: normal;
 
   src: local("PT Sans Bold"),
-  url("fonts/ptsansbold.woff") format("woff"),
-  url("fonts/ptsansbold.woff2") format("woff2");
+  url("../fonts/ptsansbold.woff") format("woff"),
+  url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 html,
@@ -253,6 +253,14 @@ a {
   transition: background-color 0.2s, color 0.2s;
 }
 
+.shopping__link--active {
+  background-color: #ee3643;
+}
+
+.shopping__link--active .shopping__svg{
+  fill: #ffffff;
+}
+
 .shopping__link:hover,
 .shopping__link:focus {
   background-color: #212a3a;
@@ -447,6 +455,47 @@ a {
   transition: color 0.2s;
 }
 
+.login__list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  padding-top: 13px;
+  padding-left: 29px;
+  position: relative;
+}
+
+.login__list::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  top: 23px;
+  left: 118px;
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
+.login__item:last-child {
+  margin-left: 32px;
+}
+
+.login__list-link {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.login__list-link:hover,
+.login__list-link:focus {
+  color: #ee3643;
+}
+
+.login__list-link:active {
+  color: #cacaca;
+}
+
 .login__link:nth-child(3) {
   margin-left: 10px;
   padding-right: 24px;
@@ -458,9 +507,19 @@ a {
   padding-left: 47px;
 }
 
+.login__link--user:nth-child(2) {
+  padding-right: 67px;
+  padding-left: 46px;;
+}
+
 .login__link:hover,
 .login__link:focus {
   color: #ee3643;
+}
+
+.login__link--user:hover,
+.login__link--user:focus {
+  color: #32425c;
 }
 
 .login__link:hover .login__svg,
@@ -484,6 +543,15 @@ a {
   transition: fill 0.2s;
 
   fill: #c5c5c5;
+}
+
+.login__svg--user {
+  top: 13px;
+  left: 13px;
+}
+
+.login__svg--logout {
+  left: 268px;
 }
 
 .main-nav {
@@ -1508,6 +1576,25 @@ a {
   margin-top: 30px;
 }
 
+.contacts__button {
+  border-width: 0;
+  outline: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__button:hover,
+.contacts__button:focus {
+  opacity: 0.7;
+}
+
+.contacts__button:active {
+  opacity: 0.3;
+}
+
 .contacts__img {
   margin-top: 17px;
 }
@@ -1589,6 +1676,7 @@ a {
   color: #ffffff;
   font-size: 18px;
   line-height: 1em;
+  outline: inherit;
   transition: text-decoration 0.2s,
               opacity 0.2s;
 }
@@ -1635,6 +1723,7 @@ a {
 .footer__add-background {
  background-color: #293449;
  margin-top: 31px;
+ padding-bottom: 18px;
 }
 
 .footer__social-list {
@@ -1644,8 +1733,9 @@ a {
   display: flex;
   justify-content: space-between;
   width: 132px;
-  margin-left: 24px;
-  margin-top: 37px;
+  margin-left: auto;
+  margin-top: 36px;
+  margin-right: 119px;
 }
 
 .footer__social-link {
@@ -1657,6 +1747,17 @@ a {
   border-radius: 50%;
   background-color: #212a3a;
   font-size: 0;
+  transition: background-color 0.2s;
+  outline: inherit;
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus {
+  background-color: #ee3643;
+}
+
+.footer__social-link:active {
+  background-color: #b52933;
 }
 
 .footer__svg {
@@ -1665,8 +1766,8 @@ a {
 
 .footer__text--email {
   margin-top: 37px;
-  margin-left: 98px;
   width: 140px;
+  margin-right: 48px;
 }
 
 .footer__link--email {
@@ -1675,11 +1776,12 @@ a {
 }
 
 .footer__text--url {
+  margin-top: 37px;
   width: 105px;
-  margin-top:
+  margin-right: 6px;
 }
 
-..footer__link--url {
+.footer__link--url {
   font-size: 1em;
   color: #ffd180;
 }
