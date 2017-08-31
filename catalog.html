@@ -141,82 +141,83 @@
     <main class="main">
       <div class="main__wrapper">
         <section class="breadcrumbs">
+          <h2 class="breadcrumbs__header visually-hidden">Путь до данной страницы</h2>
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link breadcrumbs__link--home">
+              <a class="breadcrumbs__link breadcrumbs__link--home" href="index.html">
                 Главная страница
                 <svg class="breadcrumbs__svg" width="15" height="12">
                   <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-home"></use>
                 </svg>
               </a>
             </li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Инструмент</a></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Перфораторы</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инструмент</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Перфораторы</a></li>
           </ul>
         </section>
-        <h1 class="main__header">Перфораторы</h1>
+        <div class="main__header-block">
+          <h1 class="main__header headers">Перфораторы</h1>
+        </div>
         <div class="main__container">
           <section class="filters">
-            <h2 class="filters__header">Фильтр</h2>
+            <div class="filters__header-block">
+              <h2 class="filters__header">Фильтр:</h2>
+            </div>
             <form class="form">
               <div class="form__range-block">
                 <h2 class="form__header">Цена:</h2>
                 <div class="form__range-indicators">
-                  <button class="form__range-indicator form__range-indicator--min">Минимум</button>
                   <div class="form__range-line form__range-line--back"></div>
                   <div class="form__range-line form__range-line--front"></div>
-                  <button class="form__range-indicator form__range-indicator--max">Максимум</button>
+                  <button class="form__range-indicator form__range-indicator--min" type="button">Минимум</button>
+                  <button class="form__range-indicator form__range-indicator--max" type="button">Максимум</button>
                 </div>
-                <div class="form__range">
-                  <label class="form__label">
-                    Минимальное значение цены
-                    <input class="form__range form__range--min" type="text" name="min-price" id="input_min_price" vulue="0">
-                  </label>
-                  <label class="form__label">
-                    Максимальное значение цены
-                    <input class="form__range form__range--max" type="text" name="max-price" id="input_max_price" vulue="30000">
-                  </label>
+                <div class="form__ranges">
+                  <label class="form__label visually-hidden" for="input_min_price">Максимальное значение цены</label>
+                  <input class="form__range form__range--min" type="text" name="min-price" id="input_min_price" value="0" autocomplete="off">
+                  <label class="form__label visually-hidden" for="input_max_price">Максимальное значение цены</label>
+                  <input class="form__range form__range--max" type="text" name="max-price" id="input_max_price" value="30000" autocomplete="off">
                 </div>
               </div>
               <div class="form__checkbox-block">
                 <h2 class="form__header">Производители:</h2>
-                <label class="form__label">
+                <label class="form__label form__label--checkbox">
                   Bosch
-                  <input class="form__checkbox" type="radio" name="company_bosch" id="checkbox_company_bosch" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="company_bosch" id="checkbox_company_bosch" checked>
                   <span class="form__checkbox-indicator"></span>
                 </label>
-                <label class="form__label">
+                <label class="form__label form__label--checkbox">
                   Интерскол
-                  <input class="form__checkbox" type="radio" name="company_interskol" id="checkbox_company_interskol">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="company_interskol" id="checkbox_company_interskol">
                   <span class="form__checkbox-indicator"></span>
                 </label>
-                <label class="form__label">
+                <label class="form__label form__label--checkbox">
                   Makita
-                  <input class="form__checkbox" type="radio" name="company_makita" id="checkbox_company_makita" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="company_makita" id="checkbox_company_makita" checked>
                   <span class="form__checkbox-indicator"></span>
                 </label>
-                <label class="form__label">
+                <label class="form__label form__label--checkbox">
                   Dewalt
-                  <input class="form__checkbox" type="radio" name="company_dewalt" id="checkboxcompany_dewalt">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="company_dewalt" id="checkboxcompany_dewalt">
                   <span class="form__checkbox-indicator"></span>
                 </label>
-                <label class="form__label">
+                <label class="form__label form__label--checkbox">
                   Hitachi
-                  <input class="form__checkbox" type="radio" name="company_hitachi" id="checkbox_company_hitachi" checked>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="company_hitachi" id="checkbox_company_hitachi">
                   <span class="form__checkbox-indicator"></span>
                 </label>
               </div>
               <div class="form__radio-block">
-                <h2 class="form__header">Производители:</h2>
-                <label class="form__label">
+                <h2 class="form__header">Питание:</h2>
+                <label class="form__label form__label--radio">
                   Аккумуляторные
-                  <input class="form__radio" type="radio" name="power" id="radio_company_accum" checked>
+                  <input class="form__radio visually-hidden" type="radio" name="power" id="radio_company_accum" checked>
                   <span class="form__radio-indicator"></span>
                 </label>
-                <label class="form__label">
+                <label class="form__label form__label--radio">
                   Сетевые
-                  <input class="form__radio" type="radio" name="power" id="radio_company_power">
+                  <input class="form__radio visually-hidden" type="radio" name="power" id="radio_company_power">
                   <span class="form__radio-indicator"></span>
                 </label>
               </div>
@@ -225,14 +226,14 @@
           </section>
           <section class="catalog">
             <ul class="catalog__list catalog__list--control">
-              <li class="catalog__item"><h2 class="catalog__header visually-hidden">Сортировка:</h2></li>
-              <li class="catalog__item"><button class="catalog__button-control">По цене</button></li>
+              <li class="catalog__item"><h2 class="catalog__header">Сортировка:</h2></li>
+              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--active ">По цене</button></li>
               <li class="catalog__item"><button class="catalog__button-control">По типу</button></li>
               <li class="catalog__item"><button class="catalog__button-control">По функционалу</button></li>
-              <li class="catalog__item"><button class="catalog__button-control">Обратная сортировка</button></li>
-              <li class="catalog__item"><button class="catalog__button-control">Сортировка по порядку</button></li>
+              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--up">Обратная сортировка</button></li>
+              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--down">Сортировка по порядку</button></li>
             </ul>
-            <ul class="catalog__list">
+            <ul class="catalog__list catalog__list--item">
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__block">
@@ -302,7 +303,7 @@
               </li>
               <li class="catalog__item">
                 <article class="product">
-                  <div class="product__block">
+                  <div class="product__block product--new">
                     <button class="product__button product__button--buy button">
                       <svg class="product__svg" width="15" height="15">
                         <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-cart"></use>
@@ -318,7 +319,7 @@
                 </article>
               </li>
               <li class="catalog__item">
-                <article class="product product--new">
+                <article class="product">
                   <div class="product__block">
                     <button class="product__button product__button--buy button">
                       <svg class="product__svg" width="15" height="15">
@@ -334,7 +335,7 @@
                 </article>
               </li>
               <li class="catalog__item">
-                <article class="product">
+                <article class="product product--new">
                   <div class="product__block">
                     <button class="product__button product__button--buy button">
                       <svg class="product__svg" width="15" height="15">
@@ -368,7 +369,7 @@
                 </article>
               </li>
               <li class="catalog__item">
-                <article class="product product--new">
+                <article class="product">
                   <div class="product__block">
                     <button class="product__button product__button--buy button">
                       <svg class="product__svg" width="15" height="15">
