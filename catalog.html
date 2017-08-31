@@ -59,6 +59,12 @@
       <symbol viewBox="0 0 15 12" id="icon-home">
         <g><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g><</g><
       </symbol>
+      <symbol viewBox="0 0 11 10" id="icon-up-dir">
+        <path d="M5.5 0L0 10h11z"/>
+      </symbol>
+      <symbol viewBox="0 0 11 10" id="icon-down-dir">
+        <path d="M5.5 10L0 0h11"/>
+      </symbol>
     </svg>
 
     <header class="header">
@@ -227,11 +233,25 @@
           <section class="catalog">
             <ul class="catalog__list catalog__list--control">
               <li class="catalog__item"><h2 class="catalog__header">Сортировка:</h2></li>
-              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--active ">По цене</button></li>
+              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--active">По цене</button></li>
               <li class="catalog__item"><button class="catalog__button-control">По типу</button></li>
               <li class="catalog__item"><button class="catalog__button-control">По функционалу</button></li>
-              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--up">Обратная сортировка</button></li>
-              <li class="catalog__item"><button class="catalog__button-control catalog__button-control--down">Сортировка по порядку</button></li>
+              <li class="catalog__item">
+                <button class="catalog__button-control catalog__button-control--up catalog__button-control--active">
+                  Обратная сортировка
+                  <svg class="catalog__svg" width="11" height="10">
+                    <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-up-dir"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="catalog__item">
+                <button class="catalog__button-control catalog__button-control--down">
+                Сортировка по порядку
+                <svg class="catalog__svg" width="11" height="10">
+                  <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-down-dir"></use>
+                </svg>
+              </button>
+            </li>
             </ul>
             <ul class="catalog__list catalog__list--item">
               <li class="catalog__item">
@@ -302,8 +322,8 @@
                 </article>
               </li>
               <li class="catalog__item">
-                <article class="product">
-                  <div class="product__block product--new">
+                <article class="product product--new">
+                  <div class="product__block">
                     <button class="product__button product__button--buy button">
                       <svg class="product__svg" width="15" height="15">
                         <use xmlns:xlink="http://www.w3.org/2000/svg" xlink:href="#icon-cart"></use>
@@ -385,29 +405,32 @@
                 </article>
               </li>
             </ul>
-            <ul class="catalog__list">
+            <ul class="catalog__list catalog__list--paginator">
               <li class="catalog__item">
-                <button class="catalog__paginator-button">1</button>
+                <button class="catalog__paginator-button catalog__paginator-button--active">1</button>
               </li>
               <li class="catalog__item">
                 <button class="catalog__paginator-button">2</button>
               </li>
               <li class="catalog__item">
-                <button class="catalog__paginator-button">2</button>
+                <button class="catalog__paginator-button">3</button>
               </li>
               <li class="catalog__item">
-                <button class="catalog__paginator-button">Следующая
+                <button class="catalog__paginator-button catalog__paginator-button--last">Следующая
                 </button></li>
             </ul>
           </section>
         </div>
-        <section class="catalog-info">
-          <h2 class="catalog-info__header">Пара слов о перфораторах</h2>
-          <p class="catalog-info__text">
-            Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могу выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-          </p>
-        </section>
       </div>
+      <section class="catalog-info">
+        <div class="catalog-info__wrapper">
+          <h2 class="catalog-info__header headers">Пара слов о перфораторах</h2>
+          <p class="catalog-info__text">
+            Перфоратор &thinsp;&ndash; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br /> Существуют электромеханические и пневматические перфораторы.  Современные модели могу выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
+
+      </section>
     </main>
 
     <footer class="footer">
