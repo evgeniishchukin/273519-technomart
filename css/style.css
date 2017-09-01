@@ -153,7 +153,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
@@ -270,6 +270,7 @@ a {
 
   font-size: 17px;
   line-height: 1em;
+  vertical-align: top;
   text-align: center;
   color: #ffffff;
 
@@ -422,6 +423,7 @@ a {
   padding-left: 71px;
 
   font-size: 21px;
+  vertical-align: top;
   color: #ee3633;
 
   border: 3px solid #ffffff;
@@ -639,6 +641,7 @@ a {
 
   font-size: 17px;
   line-height: 1em;
+  vertical-align: top;
   text-align: center;
   color: #ffffff;
   word-wrap: break-word;
@@ -795,6 +798,7 @@ a {
   margin-top: 15px;
   margin-left: 25px;
 
+  vertical-align: top;
   color: #ffffff;
 
   background-color: rgba(0, 0, 0, 0.1);
@@ -873,6 +877,7 @@ a {
 }
 
 .main-slider__page--first {
+  background-color: #76685b;
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -880,6 +885,7 @@ a {
 }
 
 .main-slider__page--second {
+  background-color: #76685b;
   background-image: url("../img/slider-2.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -948,6 +954,8 @@ a {
 
   display: inline-block;
   width: 195px;
+
+  vertical-align: top;
 }
 
 .main-slider__container {
@@ -968,6 +976,7 @@ a {
   height: 6px;
   margin-right: 10px;
 
+  vertical-align: top;
   vertical-align: middle;
 
   background-color: #ffffff;
@@ -1027,6 +1036,8 @@ a {
   width: 253px;
   margin-right: 24px;
   margin-bottom: 1px;
+
+  vertical-align: top;
 }
 
 .popular-goods__list {
@@ -1310,6 +1321,7 @@ a {
   font-weight: bold;
   font-size: 17px;
   line-height: 1em;
+  vertical-align: top;
   text-align: center;
   color: #ffffff;
 
@@ -1413,13 +1425,15 @@ a {
   width: 253px;
   margin-right: 24px;
   margin-bottom: 1px;
+
+  vertical-align: top;
 }
 
 .popular-companies__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   margin-top: 20px;
@@ -1688,7 +1702,6 @@ a {
   height: 285px;
 
   background-image: url("../img/credit-service.png");
-  ;
 }
 
 .services__list-header {
@@ -1714,6 +1727,8 @@ a {
   width: 195px;
   margin-top: 13px;
   margin-left: -1px;
+
+  vertical-align: top;
 }
 
 .information {
@@ -1787,6 +1802,8 @@ a {
   display: inline-block;
   width: 220px;
   margin-top: 37px;
+
+  vertical-align: top;
 }
 
 .contacts {
@@ -1812,6 +1829,7 @@ a {
   padding: 0;
 
   background-color: inherit;
+  background-color: #f4f2ec;
   border-width: 0;
   outline: inherit;
   cursor: pointer;
@@ -1861,6 +1879,7 @@ a {
   padding-bottom: 18px;
 
   font-size: 30px;
+  vertical-align: top;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -1951,6 +1970,8 @@ a {
 }
 
 .footer__link:active {
+  text-decoration: none;
+
   opacity: 0.5;
 }
 
@@ -2654,7 +2675,7 @@ a {
 }
 
 .catalog__list--item {
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
 
@@ -2923,7 +2944,7 @@ a {
 
   font-size: 0;
 
-  background-color: inherit;
+  background-color: rgba(0,0,0, 0);
   border-width: 0;
   outline: inherit;
   cursor: pointer;
@@ -2940,7 +2961,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 163px;
@@ -3010,7 +3031,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
 
   -webkit-box-pack: center;
@@ -3022,7 +3043,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
   -ms-flex-wrap: wrap;
 }
@@ -3087,6 +3108,7 @@ a {
   margin-top: -223px;
   margin-left: -470px;
 
+  background-color: #f4f2ec;
   -webkit-box-shadow: 0 8px 16px rgba(0,0,0,0.5);
           box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
