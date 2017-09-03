@@ -1826,9 +1826,9 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  margin-top: 17px;
   padding: 0;
 
-  background-color: inherit;
   background-color: #f4f2ec;
   border-width: 0;
   outline: inherit;
@@ -1842,10 +1842,6 @@ a {
 
 .contacts__button:active {
   opacity: 0.3;
-}
-
-.contacts__img {
-  margin-top: 17px;
 }
 
 .contacts__link {
@@ -2090,6 +2086,16 @@ a {
   font-size: 1em;
   color: #ffd180;
 }
+
+.footer__link--url:active,
+.footer__link--email:active {
+  color: #ee3643;
+
+  opacity: 1;
+
+  transition: color 0.2s;
+}
+
 
 .breadcrumbs {
   padding-top: 19px;
@@ -2581,7 +2587,6 @@ a {
   -webkit-transition: border-color 0.2s;
        -o-transition: border-color 0.2s;
           transition: border-color 0.2s;
-  ;
 }
 
 .form__radio-indicator::before {
